@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - Klasa walidacji dla Zjednoczonego Królestwa
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	1
+Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,8 +17,8 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate_UK/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,8 +36,8 @@ Package containes locale validation for UK such as:
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Pakiet dostarcza metody do sprawdzania poprawno¶ci danych dla
-Zjednoczonego Królestwa:
+Pakiet dostarcza metody do sprawdzania poprawno¶ci dla Zjednoczonego
+Królestwa danych takich jak:
  - SSN (numer ubezpieczenia)
  - Kod pocztowy
  - Sort code
@@ -81,4 +82,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
-%{php_pear_dir}/tests/Validate_UK/tests/validate_UK.phpt
+%{php_pear_dir}/tests/Validate_UK
