@@ -8,12 +8,13 @@ Summary:	%{_pearname} - Validation class for UK
 Summary(pl):	%{_pearname} - Klasa walidacji dla Zjednoczonego Królestwa
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
-Release:	1
+Release:	2
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	95189bbf1835ea28e9219efdaf140808
+Source1:	%{name}-carReg.php
 URL:		http://pear.php.net/package/Validate_UK/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -70,6 +71,7 @@ Testy dla PEAR::%{_pearname}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+install -D %{SOURCE1} $RPM_BUILD_ROOT%{php_pear_dir}/Validate/UK/carReg.php
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -79,6 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/LICENSE
 %{php_pear_dir}/.registry/*.reg
+%{php_pear_dir}/Validate/UK
 %{php_pear_dir}/Validate/UK.php
 
 %files tests
