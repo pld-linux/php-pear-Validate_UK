@@ -5,7 +5,7 @@
 %define		_pearname	Validate_UK
 
 Summary:	%{_pearname} - Validation class for UK
-Summary(pl):	%{_pearname} - Klasa walidacji dla Zjednoczonego KrÛlestwa
+Summary(pl.UTF-8):   %{_pearname} - Klasa walidacji dla Zjednoczonego Kr√≥lestwa
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	2
@@ -37,9 +37,9 @@ Package containes locale validation for UK such as:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet dostarcza metody do sprawdzania poprawno∂ci dla Zjednoczonego
-KrÛlestwa danych takich jak:
+%description -l pl.UTF-8
+Pakiet dostarcza metody do sprawdzania poprawno≈õci dla Zjednoczonego
+Kr√≥lestwa danych takich jak:
  - SSN (numer ubezpieczenia)
  - Kod pocztowy
  - Sort code
@@ -53,7 +53,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -61,7 +61,7 @@ AutoReq:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
