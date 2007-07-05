@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - Validation class for UK
 Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla Zjednoczonego Królestwa
 Name:		php-pear-%{_pearname}
-Version:	0.5.2
-Release:	2
+Version:	0.5.3
+Release:	1
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	95189bbf1835ea28e9219efdaf140808
+# Source0-md5:	449ec98f806ed2b0e12039d1763bd494
 Source1:	%{name}-carReg.php
 URL:		http://pear.php.net/package/Validate_UK/
 BuildRequires:	php-pear-PEAR
