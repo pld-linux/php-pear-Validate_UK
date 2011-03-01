@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for UK
 Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla Zjednoczonego Królestwa
 Name:		php-pear-%{_pearname}
 Version:	0.5.4
-Release:	1
+Release:	2
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
