@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Validation class for UK
 Summary(pl.UTF-8):	%{_pearname} - Klasa walidacji dla Zjednoczonego Królestwa
 Name:		php-pear-%{_pearname}
 Version:	0.5.4
-Release:	2
+Release:	3
 Epoch:		0
 License:	New BSD
 Group:		Development/Languages/PHP
@@ -19,7 +19,7 @@ URL:		http://pear.php.net/package/Validate_UK/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.0
+Requires:	php(core) >= 4.2.0
 Requires:	php-pear
 Obsoletes:	php-pear-Validate_UK-tests
 BuildArch:	noarch
